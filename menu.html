@@ -1,0 +1,112 @@
+""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Banti's Dhaba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu-page">
+        <div class="menu-container">
+            <h2>Our Menu</h2>
+            <div class="menu-columns">
+                <div>
+                    <h3>Tandoori Items</h3>
+                    <ul>
+                        <li>Chicken Platter - $5.00</li>
+                        <li>Tandoori Chicken - $7.00</li>
+                        <li>Chicken Kebab - $6.50</li>
+                        <li>Lamb Chops - $4.00</li>
+                        <li>Paneer Tikka - $5.50</li>
+                        <li>Veg Platter - $6.50</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Street Food</h3>
+                    <ul>
+                        <li>Veg/Chicken Burger - $6.00</li>
+                        <li>Gol Gappe - $7.00</li>
+                        <li>Pav Bhaji - $6.50</li>
+                        <li>Noodles - $8.00</li>
+                        <li>Cheese Burger - $5.50</li>
+                        <li>Chaat Papari - $6.50</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Mains</h3>
+                    <ul>
+                        <li>Butter Chicken - $5.00</li>
+                        <li>Chicken Korma - $7.00</li>
+                        <li>Shahi Paneer - $6.50</li>
+                        <li>Dal Makhni - $4.00</li>
+                        <li>Mix Veg - $5.50</li>
+                        <li>Lamb Curry - $6.50</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Breads</h3>
+                    <ul>
+                        <li>Butter Naan - $2.00</li>
+                        <li>Garlic Naan - $2.50</li>
+                        <li>Missi Roti - $1.50</li>
+                        <li>Plain Roti - $1.00</li>
+                        <li>Paratha - $2.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Indian Desserts</h3>
+                    <ul>
+                        <li>Gulab Jamun - $3.00</li>
+                        <li>Gajar da Halwa - $3.50</li>
+                        <li>Kulfi - $4.00</li>
+                        <li>Rasmalai - $4.50</li>
+                        <li>Jalebi - $2.50</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Drinks</h3>
+                    <ul>
+                        <li>Mango Lassi - $3.00</li>
+                        <li>Sweet Lassi - $2.50</li>
+                        <li>Masala Chai - $2.00</li>
+                        <li>Cold Coffee - $3.50</li>
+                        <li>Indian Filter Coffee - $3.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Banti's Dhaba. All Rights Reserved.</p>
+        <p>Current Time: <span id="clock"></span></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').innerText = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
+    ""

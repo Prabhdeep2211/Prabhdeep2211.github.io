@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Banti's Dhaba</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').innerText = timeString;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-banner">
+            <h1>Banti's Dhaba</h1>
+            <p>Indian Restaurant & Lounge</p>
+            <button onclick="window.location.href='menu.html'">Explore Menu</button>
+            <div class="contact-details">
+                <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+                <p><strong>Location:</strong> 123 Spice Street, Culinary City, Foodland, 56789</p>
+                <p id="clock"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Banti's Dhaba. All rights reserved.</p>
+    </footer>
+</body>
+</html>
